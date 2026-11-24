@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mundo Disney</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="conteudo">
+    <header class="cabecalho">
+      <p class="selo">Walt Disney</p>
+      <h1>Personagens da <span>Disney</span></h1>
+      <p class="subtitulo">Explore personagens magicos de filmes e historias inesqueciveis</p>
+
+      <form class="busca" id="formBusca">
+        <label for="busca">Quem voce procura?</label>
+        <div class="campo-busca">
+          <input type="search" id="busca" placeholder="Ex.: Mickey Mouse, Simba, Elsa..." autocomplete="off">
+          <button type="submit" id="btnBuscar">Buscar personagem</button>
+        </div>
+      </form>
+    </header>
+
+    <section>
+      <div class="titulo-resultados">
+        <h2 id="tituloResultados">Personagens em destaque</h2>
+        <p id="quantidade"></p>
+      </div>
+      <div id="resultado" class="grid" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
